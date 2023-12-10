@@ -77,7 +77,7 @@ describe("[Challenge] Climber", function () {
         //Deploy climberAttack and FakeVault
         let values = [0, 0, 0];
         let salt = ethers.utils.id("climber");
-        const ClimberAttack = await ethers.getContractFactory("ClimberAttack");
+        const ClimberAttack = await ethers.getContractFactory("AttackClimber");
         const climberAttack = await ClimberAttack.deploy(
             timelock.address,
             values,
